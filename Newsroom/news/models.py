@@ -9,3 +9,5 @@ class Headline(models.Model):
     #returns the string representation of fetched object
     def __str__(self):
         return self.title
+
+objects = models.Manager()
