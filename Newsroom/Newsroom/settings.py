@@ -25,7 +25,7 @@ SECRET_KEY = '7n)unn9iy+%u(ip=rgvz5w9^+(e-v#=awkfi4(kjz5p-z*p8*%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -38,9 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'news.apps.NewsConfig',
+    #'news'
 ]
-import django
-django.setup()
+
+#import django
+#django.setup()
 
 
 MIDDLEWARE = [
@@ -84,7 +86,7 @@ DATABASES = {
         'USER': '', 
         'PASSWORD': '',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '',
     }
 }
 
